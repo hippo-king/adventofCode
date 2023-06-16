@@ -6,17 +6,40 @@ fun main() {
     //  Read file in by line
     var packingList = File(fileName).readLines()
 
+    //  Initialize total Int Accumulator
+    var totalInt = 0
+
     // Separate each line into a string
     for (line in packingList) {
-
         //  Split string in half
-        println(separateStringInHalf(line))
-        //  Accumulate integer value for each half of the character sequence
-
+        val part1 = separateStringInHalf(line).first
+        val part2 = separateStringInHalf(line).second
+        //  Find matching Char in both strings
+        val match = checkMatch(part1, part2)
+        //  Find match's integer amount
+        val matchInt = charsVal(match)
+        //  Add matchInt to totalInt
+        totalInt += matchInt
     }
+
+    //  Print Total
+    println(totalInt)
 
 }
 
+//  Function to receive to strings and loop through the first by character and check to see if the second
+//  string contains that char, then returns that char
+fun checkMatch(part1: String, part2: String): Char {
+    var retChar = ' '
+    //Loop through each char
+    for (char in part1) {
+        if (part2.contains(char))
+            return char
+    }
+    return retChar
+}
+
+//  Function to receive a string and return a pair containing the first half and second half strings
 fun separateStringInHalf(s: String): Pair<String, String> {
 //    Define Length of String
     var stringLen = s.length
@@ -28,6 +51,7 @@ fun separateStringInHalf(s: String): Pair<String, String> {
     return Pair(firstHalf, secondHalf)
 }
 
+//  Function to receive a character and return a numerical value associated to number
 fun charsVal(char: Char): Int {
     when (char) {
         'a' -> return 1
