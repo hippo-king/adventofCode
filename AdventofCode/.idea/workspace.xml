@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00bdfb46-0e42-4ed0-8535-3f69de6a13b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/AOCDay3Part2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/AOCDay4Part1.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day4Input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +43,7 @@
       <recent name="C:\Users\viper\OneDrive\Desktop\Git\adventofCode\AdventofCode\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.AOCDay3Part2Kt">
+  <component name="RunManager" selected="Kotlin.AOCDay4Part1Kt">
     <configuration name="AOCDay3Part1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AOCDay3Part1Kt" />
       <module name="AdventofCode" />
@@ -57,8 +58,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AOCDay4Part1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AOCDay4Part1Kt" />
+      <module name="AdventofCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.AOCDay4Part1Kt" />
         <item itemvalue="Kotlin.AOCDay3Part2Kt" />
         <item itemvalue="Kotlin.AOCDay3Part1Kt" />
       </list>
