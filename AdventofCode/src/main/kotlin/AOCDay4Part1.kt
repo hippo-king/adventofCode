@@ -39,8 +39,8 @@ fun checkPairs(s: String, s1: String): Boolean {
     var sectionTwo = s1.split('-')
     //check range
     return if (checkRange(sectionOne[0].toInt(), sectionOne[1].toInt(), sectionTwo[0].toInt(), sectionTwo[1].toInt())) {
-        println("$s . $s1")
-        println("${sectionOne[0]}, ${sectionOne[1]}, ${sectionTwo[0]}, ${sectionTwo[1]}")
+//        println("$s . $s1")
+//        println("${sectionOne[0]}, ${sectionOne[1]}, ${sectionTwo[0]}, ${sectionTwo[1]}")
         println("OverLap")
         true
     } else false
@@ -49,5 +49,9 @@ fun checkPairs(s: String, s1: String): Boolean {
 
 fun checkRange(oneStart: Int, oneEnd: Int, twoStart: Int, twoEnd: Int): Boolean {
     //  if overlap ranger [a-b],[x-y] if x >= a & b >=y
-    return twoStart >= oneStart && oneEnd >= twoEnd
+    if (oneStart <= twoStart && oneEnd >= twoEnd) {
+        return true
+    } else if (oneStart >= twoStart && oneEnd <= twoEnd) {
+        return true
+    } else return false
 }
