@@ -48,10 +48,14 @@ fun checkPairs(s: String, s1: String): Boolean {
 }
 
 fun checkRange(oneStart: Int, oneEnd: Int, twoStart: Int, twoEnd: Int): Boolean {
-    //  if overlap ranger [a-b],[x-y] if x >= a & b >=y
+    //  if overlap range [a-b],[x-y] if x >= a & b >=y
     if (oneStart <= twoStart && oneEnd >= twoEnd) {
         return true
     } else if (oneStart >= twoStart && oneEnd <= twoEnd) {
+        return true
+    } else if (oneStart in (twoStart..twoEnd) || oneEnd in (twoStart..twoEnd)) {
+        return true
+    } else if (twoStart in (oneStart..oneEnd) || twoEnd in (oneStart..oneEnd)) {
         return true
     } else return false
 }
