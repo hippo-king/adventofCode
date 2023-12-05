@@ -18,7 +18,7 @@ fun main() {
 //  Function reading file into a list and returns the list of strings for each line
 fun readFile(): List<String> {
     //  Define file location
-    val fileName = "src/main/kotlin/Day4Input.txt"
+    val fileName = "src/`2023`.day1.main/kotlin/Day4Input.txt"
     //  Read file in by line
     return File(fileName).readLines()
 

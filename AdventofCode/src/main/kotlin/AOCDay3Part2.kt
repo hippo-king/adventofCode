@@ -2,7 +2,7 @@ import java.io.File
 
 fun main() {
     //  Define file location
-    val fileName = "src/main/kotlin/Day3Input.txt"
+    val fileName = "src/`2023`.day1.main/kotlin/Day3Input.txt"
     //  Read file in by line
     var packingList = File(fileName).readLines()
 
